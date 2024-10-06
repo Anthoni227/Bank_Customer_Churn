@@ -11,9 +11,7 @@ This project aims to predict whether a customer will leave (churn) a bank based 
 3. [Project Workflow](#project-workflow)
 4. [Models Implemented](#models-implemented)
 5. [Installation and Requirements](#installation-and-requirements)
-6. [Usage](#usage)
-7. [Results](#results)
-8. [Conclusions and Future Work](#conclusions-and-future-work)
+6. [Conclusions and Future Work](#conclusions-and-future-work)
 
 ---
 
@@ -77,8 +75,10 @@ Make sure you have the following installed:
 - Python 3.8+
 - Jupyter Notebook or any other IDE
 
-### **Required Libraries**
-Install the required libraries by running:
+## **Conclusions and Future Work**
+The models provided valuable insights into predicting bank customer churn, with **Random Forest** being the most reliable. Future work could include:
 
-```bash
-pip install -r requirements.txt
+- **Feature Engineering**: Creating new features to better capture customer behavior.
+- **Handling Imbalanced Data**: Applying techniques like **SMOTE** (Synthetic Minority Over-sampling Technique) or undersampling to address class imbalance.
+- **Deep Learning Models**: Experimenting with neural networks or advanced models for further improvements.
+
