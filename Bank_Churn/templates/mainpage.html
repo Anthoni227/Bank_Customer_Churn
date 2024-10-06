@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Customer Churn Prediction</title>
+    <style>
+        body {
+            background-image: url("https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/in/wp-content/uploads/2023/01/rsz_1pexels-ravi-roshan-8566288_2.jpg");
+            /*background-color: whitesmoke;*/
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            gap: 20px;
+            width: 600px;
+            padding: 20px;
+            background-color: transparent;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            border-radius: 50px;
+            margin-top: 150px;
+            box-shadow: inset 0 0 10px 5px;
+            color:black;
+        }
+        .form-group {
+            margin-bottom: 10px;
+            width: 500px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px   solid #ccc;
+            border-radius: 50px;
+            font-size: 20px;
+            border-color: transparent;
+        }
+        #name,#age,#balance,#isActiveMember,#estimatedSalary,#complain,#creditScore{
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+        ::placeholder{
+            color: rgb(113, 109, 109);
+        }
+        .button{
+            height: 30px;
+            width: 100px;
+            border-radius: 50px;
+            border-color: transparent;
+            background-color: aquamarine;
+        }
+        .button:hover{
+            background-color: greenyellow;
+            transform: scale(1.5);
+            transition:0.5s;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h2><b>Bank Customer Churn Prediction</b></h2>
+        <form method="post" action="{{ url_for('predict')}}" >
+        <div class="form-group">
+           
+            <input type="number" id="customer_id" name="customer_id" min="0" placeholder="Enter The Customer ID" required>
+        </div>
+        
+            <button type="submit" class="button">Predict</button></a>
+        </form>
+    </div>
+</body>
+</html>

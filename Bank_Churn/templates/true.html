@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+    
+      background-image: url("https://user-images.githubusercontent.com/58620359/174948746-5dc3418a-8296-4cc8-9561-f8f12ca9a0a4.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+
+
+    }
+    
+    .result {
+      text-align:center ;
+      font-size: 60px;
+      padding: 20px;;
+    }
+
+
+    .yes {
+      color:red;
+
+    
+    }
+    .txt{
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+
+<div id="result" class="result">
+
+  <!-- <script>
+    var prediction = { prediction };
+    var resultElement = document.getElementById("result");
+
+    if (prediction === 1) {
+      resultElement.innerHTML = "The Customer Likely To Leave The Bank";
+      resultElement.classList.add("yes");
+      resultElement.classList.add("body");
+    } else {
+      resultElement.innerHTML = "The Customer Not Likely TO Leave The Bank";
+      resultElement.classList.add("no");
+      resultElement.classList.add("body")
+    }
+  </script> -->
+
+  <script>
+    var prediction = { prediction };
+    var resultElement = document.getElementById("result");
+      resultElement.innerHTML = "<div class=\"txt\">The Customer Likely To Leave The Bank</div>";
+      resultElement.classList.add("yes");
+      resultElement.classList.add("body");
+
+  </script>
+</div>
+
+</body>
+</html>

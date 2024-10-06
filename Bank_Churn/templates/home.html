@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body
+    {
+        background-image: url("https://tse1.mm.bing.net/th?id=OIP.NuumMI9xGHLOC381PH9nKAHaDq&pid=Api&P=0&h=180");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 300px;
+
+    }
+    .result {
+      text-align:top;
+      font-size: 50px;
+      padding: 20px;
+      color: black;
+    }
+
+    .yes {
+      color:black;
+      background-image: url("https://tse1.mm.bing.net/th?id=OIP.NuumMI9xGHLOC381PH9nKAHaDq&pid=Api&P=0&h=180");
+    
+    }
+  </style>
+</head>
+<body>
+
+<div id="result" class="result">
+  <script>
+    var prediction = {{ prediction }};
+    var resultElement = document.getElementById("result");
+
+    if (prediction === 1) {
+      resultElement.innerHTML = "The Customer Likely To Leave The Bank";
+      resultElement.classList.add("yes");
+    }
+  </script>
+</div>
+
+</body>
+</html>
